@@ -20,7 +20,7 @@
   <section>
     <h2>🚀 Live Demo</h2>
     <p>
-      👉 <a href="#" target="_blank">Portfolio</a>
+      👉 <a href="https://ayushman-dev.netlify.app/" target="_blank">Portfolio</a>
     </p>
     <p>Example: https://your-portfolio-link.com</p>
   </section>
