@@ -15,15 +15,7 @@
       skills, and contact information.
     </p>
   </header>
-
-  <!-- Live Demo -->
-  <section>
-    <h2>🚀 Live Demo</h2>
-    <p>
-      👉 <a href="https://ayushman-codes.netlify.app" target="_blank">Portfolio</a>
-    </p>
-    <p>https://ayushman-codes.netlify.app</p>
-  </section>
+>
 
   <!-- Features -->
   <section>
