@@ -26,6 +26,7 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#training">Training</a></li>
       <li><a href="#certificates">Certs</a></li>
+      <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="hamburger" id="hamburger" onclick="toggleMenu()">
@@ -53,6 +54,9 @@
       <div class="hero-cta">
         <a href="#projects" class="btn-primary">
           <i class="fas fa-code"></i> View Projects
+        </a>
+        <a href="latest_resume.pdf" target="_blank" class="btn-outline">
+          <i class="fas fa-file-pdf"></i> View Resume
         </a>
         <a href="#contact" class="btn-outline">
           <i class="fas fa-paper-plane"></i> Contact Me
@@ -118,6 +122,7 @@
         <h4>Cloud &amp; DevOps</h4>
         <div class="skill-tags">
           <span class="skill-tag yellow">AWS</span>
+          <span class="skill-tag yellow">Azure</span>
           <span class="skill-tag yellow">Docker</span>
           <span class="skill-tag yellow">Kubernetes</span>
           <span class="skill-tag yellow">Linux</span>
@@ -189,8 +194,8 @@
         </div>
         <ul>
           <li>Developed a real-time network packet sniffer using Python and Scapy, supporting protocol analysis for TCP, UDP, ICMP, and DNS.</li>
-          <li>Built a comprehensive security dashboard with React and Socket.IO for live traffic visualization, Geo-IP mapping, and anomaly detection.</li>
-          <li>Implemented automated threat detection for port scans and traffic spikes, cross-referencing activity against known malicious IP databases.</li>
+          <li>Engineered a Python-based packet sniffer analyzing 500+ simultaneous network connections with multi-threaded packet capture.</li>
+          <li>Designed filtering engine supporting 15+ filter rules for protocol-specific analysis with hexdump payload inspection of 1500-byte frames</li>
         </ul>
         <div class="tech-stack">
           <span class="tech-badge">Python</span>
@@ -267,7 +272,7 @@
       </div>
       <div class="project-card reveal">
         <div class="project-top">
-          <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="project-icon"><i class="fa-solid fa-database"></i></div>
           <div class="project-links">
             <a href="https://github.com/ayushman031/multi-api-react-app" target="_blank" title="GitHub">
               <i class="fab fa-github"></i>
@@ -307,7 +312,7 @@
         <h3>DSA in C++ Training Program</h3>
         <div class="training-meta">
           <span><i class="fas fa-university"></i> Centre for Professional Enhancement, LPU</span>
-          <span><i class="fas fa-calendar"></i> 10 Jun – 16 Jul 2025</span>
+          <span><i class="fas fa-calendar"></i> Jun 2025 – Jul 2025</span>
         </div>
         <ul>
           <li>Completed structured training focused on Data Structures &amp; Algorithms using C++.</li>
@@ -324,7 +329,12 @@
     <div class="certs-grid">
 
       <div class="cert-card reveal">
-        <div class="cert-icon"><i class="fab fa-aws"></i></div>
+        <div class="cert-top" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+          <div class="cert-icon"><i class="fab fa-aws"></i></div>
+          <a href="https://www.credly.com/badges/ceba41ea-c266-4e83-8a52-253b212b01d8/" target="_blank" title="View Certificate" style="color: var(--light-slate); transition: color 0.3s ease;">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
         <div>
           <h5>AWS Academy Cloud Foundations</h5>
           <span>Amazon Web Services</span>
@@ -332,7 +342,12 @@
       </div>
 
       <div class="cert-card reveal">
-        <div class="cert-icon"><i class="fas fa-microchip"></i></div>
+        <div class="cert-top" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+          <div class="cert-icon"><i class="fas fa-microchip"></i></div>
+          <a href="https://nptel.ac.in/noc/courses/noc24/SEM1/noc24-cs48/" target="_blank" title="View Certificate" style="color: var(--light-slate); transition: color 0.3s ease;">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
         <div>
           <h5>Introduction to Internet of Things</h5>
           <span>NPTEL</span>
@@ -340,7 +355,12 @@
       </div>
 
       <div class="cert-card reveal">
-        <div class="cert-icon"><i class="fas fa-database"></i></div>
+        <div class="cert-top" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+          <div class="cert-icon"><i class="fas fa-database"></i></div>
+          <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=1919AE01F8F482DDF8879045A8CA3AD1108215EB46D60630D29C441A9CB7C" target="_blank" title="View Certificate" style="color: var(--light-slate); transition: color 0.3s ease;">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
         <div>
           <h5>Oracle Certified Foundations Associate</h5>
           <span>Oracle</span>
@@ -348,7 +368,12 @@
       </div>
 
       <div class="cert-card reveal">
-        <div class="cert-icon"><i class="fas fa-code-branch"></i></div>
+        <div class="cert-top" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+          <div class="cert-icon"><i class="fas fa-code-branch"></i></div>
+          <a href="https://www.udemy.com/certificate/UC-5bad6445-456c-4e83-8a52-253b212b01d8/" target="_blank" title="View Certificate" style="color: var(--light-slate); transition: color 0.3s ease;">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
         <div>
           <h5>Mastering DSA using C and C++</h5>
           <span>Abdul Bari — Udemy</span>
@@ -358,8 +383,25 @@
     </div>
   </section>
 
+  <section id="resume">
+    <div class="section-label">06. Resume</div>
+    <h2 class="section-title">My Resume</h2>
+    <div class="resume-container reveal" style="text-align: center; padding: 40px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; max-width: 600px; margin: 0 auto;">
+      <i class="fas fa-file-pdf" style="font-size: 3rem; color: var(--cyan); margin-bottom: 20px;"></i>
+      <p style="margin-bottom: 25px; color: var(--light-slate); line-height: 1.6;">Grab a copy of my latest resume to see more details about my experience, skills, and education.</p>
+      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <a href="latest_resume.pdf" target="_blank" class="btn-primary" style="display: inline-flex; width: auto; justify-content: center; gap: 10px;">
+          <i class="fas fa-eye"></i> View Resume
+        </a>
+        <a href="latest_resume.pdf" download="Ayushman_Kaushal_Resume.pdf" class="btn-outline" style="display: inline-flex; width: auto; justify-content: center; gap: 10px;">
+          <i class="fas fa-download"></i> Download
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
-    <div class="section-label">06. Contact</div>
+    <div class="section-label">07. Contact</div>
     <h2 class="section-title">Let's Connect</h2>
     <div class="contact-inner">
 
