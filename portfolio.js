@@ -1,27 +1,27 @@
 
-const cur  = document.getElementById('cursor');
+const cur = document.getElementById('cursor');
 const ring = document.getElementById('cursor-ring');
 
 document.addEventListener('mousemove', e => {
   cur.style.left = e.clientX + 'px';
-  cur.style.top  = e.clientY + 'px';
+  cur.style.top = e.clientY + 'px';
   setTimeout(() => {
     ring.style.left = e.clientX + 'px';
-    ring.style.top  = e.clientY + 'px';
+    ring.style.top = e.clientY + 'px';
   }, 80);
 });
 
 document.querySelectorAll('a, button, .skill-card, .project-card').forEach(el => {
   el.addEventListener('mouseenter', () => {
-    cur.style.width  = '6px';
+    cur.style.width = '6px';
     cur.style.height = '6px';
-    ring.style.width  = '50px';
+    ring.style.width = '50px';
     ring.style.height = '50px';
   });
   el.addEventListener('mouseleave', () => {
-    cur.style.width  = '12px';
+    cur.style.width = '12px';
     cur.style.height = '12px';
-    ring.style.width  = '36px';
+    ring.style.width = '36px';
     ring.style.height = '36px';
   });
 });
@@ -76,14 +76,14 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+document.getElementById('contactForm').addEventListener('submit', function (e) {
   e.preventDefault();
   let valid = true;
 
-  const name    = document.getElementById('cf-name');
-  const email   = document.getElementById('cf-email');
+  const name = document.getElementById('cf-name');
+  const email = document.getElementById('cf-email');
   const subject = document.getElementById('cf-subject');
-  const msg     = document.getElementById('cf-msg');
+  const msg = document.getElementById('cf-msg');
 
   const showError = (id, visible) => {
     document.getElementById(id).style.display = visible ? 'block' : 'none';
@@ -118,10 +118,10 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 });
 
 const fieldMap = [
-  ['cf-name',    'err-name'],
-  ['cf-email',   'err-email'],
+  ['cf-name', 'err-name'],
+  ['cf-email', 'err-email'],
   ['cf-subject', 'err-subject'],
-  ['cf-msg',     'err-msg'],
+  ['cf-msg', 'err-msg'],
 ];
 fieldMap.forEach(([inputId, errId]) => {
   document.getElementById(inputId).addEventListener('input', () => {
