@@ -26,7 +26,7 @@ document.querySelectorAll('a, button, .skill-card, .project-card').forEach(el =>
   });
 });
 
-const roles = ['Developer', 'Cloud Architect', 'DSA Enthusiast', 'React Dev', 'Problem Solver'];
+const roles = ['Software Developer', 'Freelance AI Engineer', 'Python Backend Developer', 'DSA Enthusiast'];
 let ri = 0, ci = 0, deleting = false;
 const typedEl = document.getElementById('typed');
 
@@ -67,12 +67,14 @@ bttBtn.addEventListener('click', () => {
 });
 
 function toggleMenu() {
-  document.getElementById('navLinks').classList.toggle('open');
+  const open = document.getElementById('navLinks').classList.toggle('open');
+  document.getElementById('hamburger').setAttribute('aria-expanded', String(open));
 }
 
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').setAttribute('aria-expanded', 'false');
   });
 });
 
@@ -110,10 +112,11 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
   } else { showError('err-msg', false); }
 
   if (valid) {
-    this.reset();
+    const body = `Name: ${name.value.trim()}\nEmail: ${email.value.trim()}\n\n${msg.value.trim()}`;
+    window.location.href = 'mailto:ayushmannkaushal@gmail.com?subject=' + encodeURIComponent(subject.value.trim()) + '&body=' + encodeURIComponent(body);
     const successEl = document.getElementById('form-success');
     successEl.style.display = 'block';
-    setTimeout(() => { successEl.style.display = 'none'; }, 4000);
+
   }
 });
 
@@ -128,3 +131,4 @@ fieldMap.forEach(([inputId, errId]) => {
     document.getElementById(errId).style.display = 'none';
   });
 });
+

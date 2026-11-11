@@ -1,50 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+# Ayushman Kaushal — Portfolio
 
-</head>
-<body>
+Personal portfolio built with HTML, CSS and vanilla JavaScript.
 
-  <!-- Hero / Title -->
-  <header>
-    <h1>🌐 Personal Portfolio</h1>
-    <p>
-      A modern and responsive personal portfolio website to showcase my projects,
-      skills, and contact information.
-    </p>
-  </header>
->
+## Sections
+- Software development profile and technical skills
+- Vraify AI freelance contract experience
+- Freelance services: web development, Python backends and AI quality assurance
+- Projects, including REVIVE AI Revenue Recovery Agent
+- Training, achievements, certifications and education
+- Updated November 2026 resume and contact details
 
-  <!-- Features -->
-  <section>
-    <h2>📌 Features</h2>
-    <ul>
-      <li>Responsive design for all devices 📱💻</li>
-      <li>Clean and modern UI</li>
-      <li>Projects showcase section</li>
-      <li>Skills & technologies section</li>
-      <li>About me section</li>
-      <li>Contact form / social links</li>
-      <li>Smooth navigation</li>
-    </ul>
-  </section>
+## Run locally
+```sh
+python3 -m http.server 8000
+```
+Open http://localhost:8000. No build step or dependencies are required.
 
-  <section>
-    <h2>🛠️ Tech Stack</h2>
-    <h3>Frontend</h3>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-    </ul>
-    <h3>Other Tools</h3>
-    <ul>
-      <li>Git & GitHub</li>
-      <li>VS Code</li>
-    </ul>
-  </section>
-
-</body>
-</html>
+## Maintenance
+- Edit content in `index.html`, styles in `style.css`, and interactions in `portfolio.js`.
+- Replace `latest_resume.pdf` to update all resume buttons.
+- The contact form opens a prefilled email draft; it does not send mail or require a backend.
+- REVIVE performance figures are synthetic evaluation results, not production outcomes.
